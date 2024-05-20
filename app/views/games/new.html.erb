@@ -1,0 +1,18 @@
+<h1>New Game</h1>
+<form action="score" method="post" data-turbo="false">
+  <input id="tags_list" name="tags_list" type="hidden" />
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <!-- ... -->
+  <div class="d-flex justify-content-between">
+    <%@letters.each do |letter|%>
+      <button class="btn btn-primary p-4 rounded-0">
+        <h3><%=letter%></h3>
+      </button>
+    <%end%>
+  </div>
+  </br>
+  <div class="form-group mx-sm-3 mb-2">
+    <input type="text" name="new" class="form-control" placeholder="What is the longest word you can find?">
+  </div>
+  <button type="submit" value="Play" class="btn btn-primary mx-sm-3 mb-2">Play</button>
+</form>

@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+
+ button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(1, 140, 246);
+    color: white,
+ }
